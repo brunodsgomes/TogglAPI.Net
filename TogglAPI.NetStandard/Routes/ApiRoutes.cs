@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,10 +7,10 @@ namespace Toggl
 {
     public static class ApiRoutes
     {
-	    private const string TogglBaseUrl                           = "https://www.toggl.com/api/v8";
-		private const string TogglReportUrl                         = "https://toggl.com/reports/api/v2";
+        private const string TogglBaseUrl                           = "https://api.track.toggl.com/api/v8";
+        private const string TogglReportUrl                         = "https://api.track.toggl.com/reports/api/v2";
 
-	    public static class Reports
+        public static class Reports
         {
             public static readonly string Detailed                  = TogglReportUrl + "/details";
             public static readonly string Weekly                    = TogglReportUrl + "/weekly";
@@ -57,7 +57,7 @@ namespace Toggl
 
         public static class Project
         {
-			public readonly static string ProjectsBulkDeleteUrl     = TogglBaseUrl + "/projects/{0}";
+            public readonly static string ProjectsBulkDeleteUrl     = TogglBaseUrl + "/projects/{0}";
             public readonly static string ProjectsUrl               = TogglBaseUrl + "/projects";
             public readonly static string DetailUrl                 = TogglBaseUrl + "/projects/{0}";
             public readonly static string UsersUrl                  = TogglBaseUrl + "/projects/{0}/project_users";
